@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultbgcolor"
+    tools:context="com.sunmi.pocketvendor.activity.products.topups.easiActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/servicebanner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:onClick="easiBack"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_back"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="EASI TOP-UP"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/loc_rounded">
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:background="@drawable/etp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/loc_rounded"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Phone No:"
+                android:textColor="@color/fontcolor"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lay_easi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_edittext">
+                <TextView
+                    android:text="+673    "
+                    android:textColor="#6b6c6c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"/>
+                <EditText
+                    android:id="@+id/et_easino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint=" - - -  - - - -"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:maxLength="7"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="Top up Amount:"
+                android:textColor="@color/fontcolor"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_two"
+                    android:onClick="isTwo"
+                    android:text="$2"
+                    android:textAlignment="center"
+                    android:textColor="#6b6c6c"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_edittext"/>
+                <TextView
+                    android:id="@+id/tv_two2"
+                    android:onClick="isTwo"
+                    android:text="$2"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_solid"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_two_disable"
+                    android:onClick="isTwoDisable"
+                    android:text="$2"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#ff0000"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_disabled"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_five"
+                    android:onClick="isFive"
+                    android:text=" $5 "
+                    android:textAlignment="center"
+                    android:textColor="#6b6c6c"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_edittext"/>
+                <TextView
+                    android:id="@+id/tv_five2"
+                    android:onClick="isFive"
+                    android:text="$5"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_solid"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_ten"
+                    android:onClick="isTen"
+                    android:text="$10"
+                    android:textAlignment="center"
+                    android:textColor="#6b6c6c"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_edittext"/>
+                <TextView
+                    android:id="@+id/tv_ten2"
+                    android:onClick="isTen"
+                    android:text="$10"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_solid"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_twenty"
+                    android:onClick="isTwenty"
+                    android:text="$20"
+                    android:textAlignment="center"
+                    android:textColor="#6b6c6c"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_edittext"/>
+                <TextView
+                    android:id="@+id/tv_twenty2"
+                    android:onClick="isTwenty"
+                    android:text="$20"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_solid"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_fourty"
+                    android:onClick="isFourty"
+                    android:text="$40"
+                    android:textAlignment="center"
+                    android:textColor="#6b6c6c"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_edittext"/>
+                <TextView
+                    android:id="@+id/tv_fourty2"
+                    android:onClick="isFourty"
+                    android:text="$40"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_solid"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_hundred"
+                    android:onClick="isHundred"
+                    android:text="$100"
+                    android:textAlignment="center"
+                    android:textColor="#6b6c6c"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_edittext"/>
+                <TextView
+                    android:id="@+id/tv_hundred2"
+                    android:onClick="isHundred"
+                    android:text="$100"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_solid"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cls_easiphone"
+        android:onClick="EClearPhone"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/clear1"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="290dp"/>
+
+    <Button
+        android:id="@+id/btn_easi1"
+        android:onClick="ENext"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_new_button"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

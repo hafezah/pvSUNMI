@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Pocket Vendor</string>
+    <string name="address">No. 9, 1st Floor Blk A,\nSpg 150-17-20,\nSetia Kenangan II Kiulap,\nBandar Seri Begawan BE 1518,\nBrunei Darussalam.</string>
+    <string name="montlysalestarget">Please be reminded that rental fee will be waived if sales target has been reached.</string>
+    <string name="salesreport">For full account report, please visit Pocket Vendor website to view details of merchant account report.</string>
+    <string name="title_activity_navi_main">naviMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">POCKET VENDOR 0.4.4</string>
+    <string name="nav_header_subtitle">ThreeG Media Merchant</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="headerstr">
+        <item>Log In and ID Card</item>
+        <item>Selling Process and Commission Rates</item>
+        <item>Products</item>
+        <item>Transaction Activity</item>
+        <item>Account and Balance Recharge</item>
+        <item>Rental Fee</item>
+        <item>Web Portal</item>
+    </string-array>
+    <string-array name="subheader">
+        <item>Easi Top Up</item>
+        <item>Progresif Top Up</item>
+        <item>Progresif Zoom</item>
+        <item>POWERInstant</item>
+        <item>iTunes Gift Card</item>
+        <item>Google Play Gift Card</item>
+        <item>TelBru Prepaid WiFi</item>
+    </string-array>
+    <string-array name="header1">
+        <item>How many cards can access the terminal?</item>
+        <item>Depends on the number of ID cards that you have requested. We only provide 2 free ID cards. </item>
+        <item>Can we get more cards?</item>
+        <item>Yes, additional ID cards can be given upon request and will be charged BND2 each.</item>
+        <item>What should we do if we lose the ID card? Can we get a new one?</item>
+        <item>Please contact our hotline (+673 8323999) immediately and we will disable the card. For a new card, you will be charged BND2. </item>
+        <item>What should we do if our ID card is stolen? Can we get a new one?</item>
+        <item>Please contact our hotline (+673 8323999) immediately and we will disable the card. For a new card, you will be charged BND2. </item>
+        <item>Can 1 card be shared among my employees?</item>
+        <item>Yes but it is better if 1 employee has 1 ID card. This is for security purposes. </item>
+        <item>We can’t seem to log in using our card, what should we do?</item>
+        <item>Try to restart your terminal. If you still can’t log in, please contact our hotline (+673 8323999) and we will assist you. </item>
+        <item>Can other merchant’s ID card be used to log in our terminal?</item>
+        <item>No, each merchant has his/her own ID cards and terminal and the ID cards can only strictly be used on the designated terminal. </item>
+        <item>I have multiple branches with multiple terminals, can the ID cards access on all the terminals?</item>
+        <item>Yes.</item>
+
+    </string-array>
+    <string-array name="header2">
+        <item>Can we choose which product to sell?</item>
+        <item>You may choose not to sell certain products, however the products will still be shown on your terminal. </item>
+
+        <item>How do we know the amount of money that we have earned from Pocket Vendor?</item>
+        <item>Your profit earned is stated on the web portal.</item>
+
+        <item>What should we do if we/the customer wrongly entered the amount? </item>
+        <item>ThreeG Media is not responsible for any replacement or reversal of Easi Prepaid Top Up, PCSB Prepaid Top Up or POWERInstant token as a result of wrongly entered mobile no., Prepaid Meter no. or amount by the Merchant and the customer.</item>
+
+        <item>What should we do if we/the customer wrongly entered the phone number for Easi Top Up and PCSB TopUp?</item>
+        <item>ThreeG Media is not responsible for any replacement or reversal of Easi Prepaid Top Up, PCSB Prepaid Top Up or POWERInstant token as a result of wrongly entered mobile no., Prepaid Meter no. or amount by the Merchant and the customer.</item>
+
+        <item>What should we do if we/the customer wrongly entered the phone number for PCSB Zoom, PowerInstant, TelBru, Google Play giftcard and iTunes giftcard?</item>
+        <item>ThreeG Media is not responsible for any replacement or reversal of Easi Prepaid Top Up, PCSB Prepaid Top Up or POWERInstant token as a result of wrongly entered mobile no., Prepaid Meter no. or amount by the Merchant and the customer.</item>
+
+        <item>What should we do if customer refuses to give his/her phone number?</item>
+        <item>ThreeG Media is not responsible if the PIN has been used as a result of wrongly entered number in the first place. You may contact our hotline (+673 8323999) and we will assist you. </item>
+
+        <item>What should we do when customers want to top up later?</item>
+        <item>At the moment, we are working on that matter.</item>
+
+        <item>My customer has come back and requested for the receipt, what should we do?</item>
+        <item>Please go to “Transaction Activity”, select the transaction and click “Print”.</item>
+
+        <item>What is the commission rate that we get for each of the product?</item>
+        <item>You can refer the commission rates on the agreement form that we have provided. You can also contact our hotline (+673 8323999) for more info. </item>
+
+        <item>Can we get higher commission rates if we sell more?</item>
+        <item>All commission rates are currently fixed and this applies to all merchants.</item>
+
+    </string-array>
+
+    <!--HS 3(37)-->
+    <string-array name="subeasi">
+        <item>Is the validity period same with the physical card?</item>
+        <item>Yes.</item>
+        <item>Do customers get the same bonus credit like the physical card?</item>
+        <item>Yes.</item>
+        <item>My customer tried to purchase Easi Top Up but the transaction does not go through, what should we do?</item>
+        <item>Customer’s line might be barred or Prima line or non-DST line. Please make sure your balance is not affected and refund the customer’s money. </item>
+    </string-array>
+    <string-array name="subpcsbtp">
+        <item>Is the validity period same with the physical card?</item>
+        <item>Yes.</item>
+        <item>Do customers get the same bonus credit like the physical card?</item>
+        <item>Yes.</item>
+        <item>My customer has purcased Progresif TopUp but the transaction does not go through, what should we do?</item>
+        <item>Customer’s line might be barred or non-PCSB line. Please make sure your balance is not affected and refund the customer’s money. </item>
+        <item>Can customers purchase top up with change? For example, BND7.50?</item>
+        <item>No, top up purchased must be rounded off, therefore either BND7 or BND8. </item>
+    </string-array>
+    <string-array name="subpcsbzm">
+        <item>Is the validity period same with the physical card?</item>
+        <item>Yes, BND 4 – 2 days unlimited of data usage, BND 8 – 3 days unlimited of data usage.</item>
+        <item>Is this a direct top up?</item>
+        <item>No, the PINs will be sent via SMS and customers are required to top up themselves.</item>
+        <item>How do customers top up the PIN?</item>
+        <item>Dial *178*PIN Number#</item>
+        <item>Customer says he/she can’t top up the PIN, what should we do?</item>
+        <item>Please ensure that the customer is using a PCSB Zoom number to top up the PIN. If the customer is already using PCSB Zoom, kindly contact PCSB Customer Care line 177. </item>
+        <item>My customer has requested the PIN to be printed on the receipt, what should we do?</item>
+        <item>The PIN will only be shown in the SMS.</item>
+        <item>My customer has accidentally deleted the SMS that contains the PIN, what should we do?</item>
+        <item>Please go to “Transaction Activity”, choose the transaction and click the “Resend” button on the top right.</item>
+    </string-array>
+    <string-array name="subpowerinstant">
+        <item>Do customers get the same standard tariff like normal PowerKad?</item>
+        <item>Yes.</item>
+        <item>How do customers use the token given?</item>
+        <item>Customers can enter the 20-digit token received from the SMS into their prepaid meter and press enter. Their meter will display “ACCEPTED” showing their 20-digit token had been successfully entered, and they can see the credit top-up value has increased either in B$ amount or KWh.</item>
+        <item>What happen if we/the customers have entered the wrong Prepaid Meter number?</item>
+        <item>If you/customer have entered an active Prepaid Meter number that belongs to other person, the customer will still receive the 20-digit token for the Prepaid Meter number but it will not valid to your Prepaid Meter number.\nYou should always show the confirmation page to customers and make sure the right phone number and meter number have been entered. </item>
+        <item>What should we do if customer does not know or forget his/her meter number? Can they still purchase PowerInstant?</item>
+        <item>PowerInstant can only be purchased when the meter number is entered. You can advice the customer to search “Pocket.com.bn” on Google Play or App Store. Customers can store their information such as meter number and phone number for future purchases. </item>
+    </string-array>
+    <string-array name="subitunes">
+        <item>Can customers with non US account use the gift card?</item>
+        <item>No, the gift card is only valid for US account.</item>
+        <item>Is this a direct top up?</item>
+        <item>No, the PINs will be sent via SMS and customers are required to redeem the code themselves.</item>
+        <item>How can customers redeem the code?</item>
+        <item>1. On iPhone, iPad, or iPod touch, open the App Store app.\n2. Tap Today, then tap  icon or your photo in the upper-right corner.\n3. Tap "Redeem Gift Card or Code," then sign in with your Apple ID.\n4. Enter the 16-digit code.\n5. Tap ‘Done’.</item>
+        <item>The customer has already purchased the gift card but he/she just realizes that he/she cannot redeem because it is not a US account, hence the customer asks for a refund. What should we do?</item>
+        <item>Once it is purchased, it can no longer be refunded. </item>
+        <item>My staff accidentally accepted the wrong amount, i.e. BND 10 instead of BND 19, what should we do?</item>
+        <item>ThreeG Media Sdn Bhd is not responsible if you have collected the wrong amount for these products.  You may contact the customer for the payment.</item>
+        <item>My customer has requested the PIN to be printed on the receipt, what should we do?</item>
+        <item>The PIN will only be shown in the SMS</item>
+        <item>My customer has accidentally deleted the SMS that contains the PIN, what should we do?</item>
+        <item>Please go to “Transaction Activity” page, choose the transaction and click the “Resend” button on the top right.</item>
+    </string-array>
+    <string-array name="subgoogle">
+        <item>Can customers with non US account use the gift card?</item>
+        <item>No, the gift card is only valid for US account.  </item>
+        <item>Is this a direct top up?</item>
+        <item>No, the PINs will be sent via SMS and customers are required to redeem the code themselves. </item>
+        <item>How can customers redeem the code?</item>
+        <item>1. Open the Google Play Store app.\n2. Tap Menu > Redeem.\n3. Enter code.\n4. Tap Redeem.</item>
+        <item>The customer has already purchased the gift card but he/she just realizes that he/she cannot redeem because it is not a US account, hence the customer asks for a refund. What should we do?</item>
+        <item>Once it is purchased, it can no longer be refunded. </item>
+        <item>My staff accidentally accepted the wrong amount, i.e. BND 10 instead of BND 19, what should we do?</item>
+        <item>ThreeG Media Sdn Bhd is not responsible if you have collected the wrong amount for these products.  You may contact the customer for the payment. </item>
+        <item>My customer has requested the PIN to be printed on the receipt, what should we do?</item>
+        <item>The PIN will only be shown in the SMS.</item>
+        <item>My customer has accidentally deleted the SMS that contains the PIN, what should we do?</item>
+        <item>Please go to “transaction activity”, choose the transaction and click the “resend” button on the top right.  </item>
+    </string-array>
+    <string-array name="subtelbru">
+        <item>Is this a direct top up?</item>
+        <item>No, the PINs will be sent via SMS and customers are required to top up themselves. </item>
+        <item>How do customers top up the PIN?</item>
+        <item>Select “TelBru WiFi” network at any TelBru WiFi Zone. Once connected, they will be redirected to a splash page.\nSelect “TelBru WiFi Prepaid”. Enter the Prepaid Plan PIN Code and click “Agree and Submit”.</item>
+        <item>How to know where is the TelBru WiFi Zone?</item>
+        <item>You can fine TelBru WiFi Zone on https://www.telbru.com.bn/ </item>
+        <item>What is the validity of each denomination?</item>
+        <item>$3 – 1 day unlimited\n$3 – 500MB valid for 3 days\n$5 – 1GB valid for 3 days\n$10 – 3GB valid for 14 days\n$15 – 7GB valid for 28 days </item>
+        <item>My customer has requested the PIN to be printed on the receipt, what should we do?</item>
+        <item>The PIN will only be shown in the SMS. </item>
+        <item>My customer has accidentally deleted the SMS that contains the PIN, what should we do?</item>
+        <item>Please go to “Transaction Activity”, choose the transaction and click the “Resend” button on the top right.</item>
+    </string-array>
+
+
+    <string-array name="header4">
+        <item>What do the red and green lights indicate on the transaction activity?</item>
+        <item>Red right means unsuccessful transaction, which means you should not be accepting the customer’s money and your balance should not be affected. Green light means successful transaction. </item>
+        <item>Can we print out the list from the transaction activity?</item>
+        <item>Yes, simple select the date and click “Print List”. However, you are advised to use the web portal to see your transactions for a better view. </item>
+        <item>Can we select the dates to print out the list? For example from 8th July to 10th July. </item>
+        <item>You may do so on the web portal. Simply select the dates you want to print. </item>
+        <item>Are the PINs shown on the transaction activity?</item>
+        <item>For security purposes, the PINs are not shown on the receipt and the transaction activity. Only customers that have purchased the products can see the PINs via SMS. </item>
+    </string-array>
+    <string-array name="header5">
+        <item>How do we recharge our balance?</item>
+        <item>Please make the payment to any of our bank accounts, send the receipt with your Merchant Account Card via Whatsapp to +673 8323999. </item>
+        <item>Is there a minimum or maximum amount to recharge our balance?</item>
+        <item>Minimum of BND300 and no maximum.</item>
+        <item>Which banks can we recharge our balance to?</item>
+        <item>BIBD, Baiduri Bank and Standard Chartered. Full details can be found on the “Account” page. </item>
+        <item>Can we recharge our balance using BIBD Biller?</item>
+        <item>Yes, simply select “Pocket Vendor” from the list, input your Merchant ID in the “Bill/Reference No. 1” box and enter the amount you would like to recharge. Send the receipt via Whatsapp to +673 8323999. </item>
+        <item>How is the balance deducted?</item>
+        <item>The amount deducted is the net price not the selling price. For example, when you sell PowerInstant $10, the amount deducted will be BND9.85 instead of BND10. </item>
+        <item>How does the sales target indicator work?</item>
+        <item>On a monthly basis, if you have not reached sales target of BND2000, the indicator will be red. After you have reached sales of BND2000, the indicator will turn green, which means the rental fee of BND20 will be waived. </item>
+    </string-array>
+    <string-array name="header6">
+        <item>How does the rental fee work?</item>
+        <item>Each month, you need to reach a sales target of BND2000. If you manage to reach the sales target, the rental fee of BND20 will be waived. </item>
+        <item>How will you charge the rental fee?</item>
+        <item>We will deduct from your balance.</item>
+        <item>What will happen if we don’t have enough balance to pay the rental fee?</item>
+        <item>The rental fee will be charged the next time you recharge your balance. </item>
+    </string-array>
+    <string-array name="header7">
+        <item>How do we access to the web portal?</item>
+        <item>Once your merchant account is signed up, you will receive a link via email to go to the web portal. If you have not received the email, please contact our hotline (+673 8323999). </item>
+        <item>Can we have multiple people to access the web portal?</item>
+        <item>Yes, as long as you have the password and received the mPIN.</item>
+        <item>We have not received the mPIN even after a few minutes, what should we do?</item>
+        <item>Please reload the page and re-log in. If problem still occurs, please contact our hotline (+673 8323999). </item>
+    </string-array>
+
+
+</resources>

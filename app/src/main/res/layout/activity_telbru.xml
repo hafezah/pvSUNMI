@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/defaultbgcolor"
+    tools:context="com.sunmi.pocketvendor.activity.products.topups.telbruActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/servicebanner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:onClick="telbruBack"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_back"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="PREPAID WIFI"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--TITLE-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/loc_rounded">
+                    <ImageView
+                        android:id="@+id/iv_telbru"
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/telprepaid"/>
+                </LinearLayout>
+
+                <!--BODY-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/loc_rounded"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:text="Phone No: (to receive PIN)"
+                        android:textColor="@color/fontcolor"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_telbru1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_edittext">
+                        <TextView
+                            android:text="+673    "
+                            android:textColor="#6b6c6c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"/>
+                        <EditText
+                            android:id="@+id/et_tbphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="13dp"
+                            android:hint=" - - -  - - - -"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@null"
+                            android:inputType="number"
+                            android:maxLength="7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="Top up Amount:"
+                            android:textColor="@color/fontcolor"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:onClick="bnd3unlimited"
+                                android:id="@+id/tv_pre3unlimited"
+                                android:text="BND 3\n(UNLIMITED)"
+                                android:textAlignment="center"
+                                android:textSize="11sp"
+                                android:textColor="@color/fontcolor"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="75dp"
+                                android:padding="20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:background="@drawable/rounded_edittext"/>
+                            <TextView
+                                android:onClick="bnd3"
+                                android:id="@+id/tv_pre3"
+                                android:text="BND 3"
+                                android:textAlignment="center"
+                                android:textSize="11sp"
+                                android:textColor="@color/fontcolor"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="75dp"
+                                android:padding="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:background="@drawable/rounded_edittext"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:onClick="bnd5"
+                                android:id="@+id/tv_pre5"
+                                android:text="BND 5"
+                                android:textSize="11sp"
+                                android:textColor="@color/fontcolor"
+                                android:textAlignment="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/rounded_edittext"/>
+                            <TextView
+                                android:onClick="bnd10"
+                                android:id="@+id/tv_pre10"
+                                android:text="BND 10"
+                                android:textSize="11sp"
+                                android:textColor="@color/fontcolor"
+                                android:textAlignment="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/rounded_edittext"/>
+                            <TextView
+                                android:onClick="bnd15"
+                                android:id="@+id/tv_pre15"
+                                android:text="BND 15"
+                                android:textSize="11sp"
+                                android:textColor="@color/fontcolor"
+                                android:textAlignment="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/rounded_edittext"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cls_tbphone"
+        android:onClick="TBClearPhone"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/clear1"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="290dp"/>
+
+    <Button
+        android:id="@+id/btn_telbru1"
+        android:onClick="TBNext"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_new_button"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

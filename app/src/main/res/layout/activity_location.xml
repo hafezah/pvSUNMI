@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    tools:context="com.sunmi.pocketvendor.activity.locationActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/servicebanner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:onClick="locBack"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_back"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="TOP-UP ACCOUNT"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40sp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="23dp"
+            android:background="@drawable/loc_rounded">
+
+            <TextView
+                android:text="Topup Account by Bank Transfer"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/fontcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e2e2e2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+            </View>
+
+            <TextView
+                android:text="Account Name : THREEG MEDIA SDN BHD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/fontcolor"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/roundedborder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/topborder"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="Bank"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Account Number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="BIBD"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="11dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="00-001-01-005511-4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="11dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="BAIDURI"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="11dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="02-01-110-298906"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="11dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="STANDARD CHARTERED"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="11dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="01-001037742-00"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="11dp"
+                        android:textColor="@color/fontcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Please send bank slip along with your Merchant Account Card via Whatsapp to +673 832 3999"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Contact our Pocket Team hotline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/fontcolor"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e2e2e2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:background="@drawable/call"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:text="Call"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:text="+673 245 5898"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:background="@drawable/wa"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:text="Whatsapp"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:text="+673 832 3999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:background="@drawable/location"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_marginBottom="15dp"/>-->
+            <!--<TextView-->
+                <!--android:text="Or drop by to ThreeG Media Headquarters office :\n"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/fontcolor"-->
+                <!--android:textSize="12dp"/>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:background="@drawable/pin"-->
+                    <!--android:layout_width="50px"-->
+                    <!--android:layout_height="50px"-->
+                    <!--android:layout_marginRight="5dp"/>-->
+                <!--<TextView-->
+                    <!--android:text="@string/address"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:textColor="@color/fontcolor"-->
+                    <!--android:textSize="12dp"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:text="Powered by ThreeG Media Sdn Bhd"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="12dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:text="Powered by ThreeG Media Sdn Bhd"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"/>
+
+</RelativeLayout>

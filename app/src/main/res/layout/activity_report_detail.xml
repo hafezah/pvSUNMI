@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context="com.sunmi.pocketvendor.activity.reportDetailActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/servicebanner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:onClick="tadBack"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_back"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="TRANSACTION ACTIVITY"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+            <ImageView
+                android:id="@+id/iv_resend"
+                android:onClick="smsresend"
+                android:src="@drawable/resendicon"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:onClick="irPrint"
+                android:src="@drawable/printicon"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="355dp"
+                android:padding="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_rdetail">
+
+                <TextView
+                    android:id="@+id/tv_iReport"
+                    android:text="INDIVIDUAL REPORT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/iv_pi"
+                        android:background="@drawable/pi"
+                        android:layout_width="250dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/iv_ptp"
+                        android:background="@drawable/ptp"
+                        android:layout_width="180dp"
+                        android:layout_height="110dp"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/iv_etp"
+                        android:background="@drawable/etp"
+                        android:layout_width="190dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/iv_ggc"
+                        android:background="@drawable/gtp"
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/iv_igc"
+                        android:background="@drawable/itp"
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/iv_tbp"
+                        android:background="@drawable/telprepaid"
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Ref No."
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irLiveRef"
+                        android:text="-"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/refbg"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Date (Time)"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irDate"
+                        android:text="17/11/17"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_irTime"
+                        android:text="(12:00PM)"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Status"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irStatus"
+                        android:text="Success"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Merchant"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irMerchant"
+                        android:text="-"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Cashier"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irCashier"
+                        android:text="-"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_irNumber"
+                            android:text="Meter no"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irMeter"
+                        android:text="-"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv_token"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Token"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irToken"
+                        android:text="-"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv_smsphoneno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Phone no"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_smsPhone"
+                        android:text="-"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Amount"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_irAmount"
+                        android:text="$200.00"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="irOK"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_new_button"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

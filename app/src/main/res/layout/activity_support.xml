@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultbgcolor"
+    tools:context="com.sunmi.pocketvendor.activity.supportActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/servicebanner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:onClick="suppBack"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_back"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="SUPPORT"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:padding="20dp"
+        android:background="@drawable/loc_rounded"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Contact our Pocket Team hotline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/fontcolor"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2e2e2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:background="@drawable/call"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:text="Call"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/fontcolor"
+                android:textSize="12dp"/>
+            <TextView
+                android:text="+673 245 5898"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/fontcolor"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:background="@drawable/wa"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:text="Whatsapp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/fontcolor"
+                android:textSize="12dp"/>
+            <TextView
+                android:text="+673 832 3999"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/fontcolor"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:onClick="getsupport"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@drawable/location"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Or drop by to ThreeG Media Headquarters office :\n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fontcolor"
+        android:textSize="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/pin"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:text="@string/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/fontcolor"
+            android:textSize="12dp"/>
+        </LinearLayout>
+
+        <Button
+            android:text="SEND LOG"
+            android:textColor="@color/white"
+            android:onClick="senderrorlogs"
+            android:background="@drawable/rounded_new_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Powered by ThreeG Media Sdn Bhd"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"/>
+
+</RelativeLayout>
