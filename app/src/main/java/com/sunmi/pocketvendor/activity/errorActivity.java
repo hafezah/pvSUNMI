@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.sunmi.pocketvendor.AppLogg;
 import com.sunmi.pocketvendor.R;
 
 public class errorActivity extends AppCompatActivity {
@@ -15,6 +16,10 @@ public class errorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error);
+
+        AppLogg appLogg = new AppLogg();
+        appLogg.getlog(getApplicationContext(), "ERR-[con break]");
+        appLogg.logit(getApplicationContext(), appLogg.logcontent(getApplicationContext()));
 
     }
 

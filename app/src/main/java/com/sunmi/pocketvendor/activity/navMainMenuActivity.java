@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sunmi.pocketvendor.AppConn;
+import com.sunmi.pocketvendor.AppLogg;
 import com.sunmi.pocketvendor.BaseActivity;
 import com.sunmi.pocketvendor.R;
 import com.sunmi.pocketvendor.activity.products.topups.easiActivity;
@@ -87,7 +88,10 @@ public class navMainMenuActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_mainmenu);
-        log("MM");
+
+
+        AppLogg appLogg = new AppLogg();
+        appLogg.getlog(getApplicationContext(), "MAIN");
 
         setToolbar();
         configureNavigationDrawer();

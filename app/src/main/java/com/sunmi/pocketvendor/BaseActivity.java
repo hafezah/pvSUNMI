@@ -19,10 +19,6 @@ public class BaseActivity extends AppCompatActivity implements LogoutListener {
         ((BaseApp)getApplication()).startUserSession();
     }
 
-    public void log(String activity){
-        Log.i("PVSUNMI/", activity);
-    }
-
     @Override
     public void onUserInteraction() {
         super.onUserInteraction();

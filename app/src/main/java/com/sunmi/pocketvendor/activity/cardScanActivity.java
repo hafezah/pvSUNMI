@@ -30,6 +30,7 @@ import com.sunmi.pay.hardware.aidl.bean.CardInfo;
 import com.sunmi.pay.hardware.aidl.readcard.ReadCardCallback;
 import com.sunmi.pay.hardware.aidl.readcard.ReadCardOpt;
 import com.sunmi.pocketvendor.AppConn;
+import com.sunmi.pocketvendor.AppLogg;
 import com.sunmi.pocketvendor.R;
 import com.sunmi.pocketvendor.network.Global;
 import com.sunmi.pocketvendor.network.Response;
@@ -202,6 +203,9 @@ public class cardScanActivity extends Activity {
         } catch (RemoteException e) {
             e.printStackTrace();
         }
+
+        AppLogg appLogg = new AppLogg();
+        appLogg.getlog(getApplicationContext(), "CSCAN-[" + cardSerial + "]");
 
         final ProgressDialog pdialog = new ProgressDialog(cardScanActivity.this);
         pdialog.setMessage("Loading, Please wait...");

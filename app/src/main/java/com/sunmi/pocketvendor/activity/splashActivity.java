@@ -64,7 +64,7 @@ public class splashActivity extends Activity {
         setContentView(R.layout.activity_splash);
 
         AppLogg appLogg = new AppLogg();
-        appLogg.logit("test");
+        appLogg.getlog(getApplicationContext(), "SPLSH");
 
         ProgressDialog pd = new ProgressDialog(this);
         pd.setTitle("Initializing terminal");

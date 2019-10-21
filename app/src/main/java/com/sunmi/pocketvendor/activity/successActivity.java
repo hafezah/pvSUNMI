@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.sunmi.pocketvendor.AppConn;
+import com.sunmi.pocketvendor.AppLogg;
 import com.sunmi.pocketvendor.R;
 import com.sunmi.pocketvendor.activity.products.topups.easiActivity;
 import com.sunmi.pocketvendor.network.Global;
@@ -35,15 +36,16 @@ public class successActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_success);
 
-        Long tsLong = System.currentTimeMillis()/1000;
-        Log.i("PVSUNMI/", "S(" + tsLong.toString() + ")");
-
         title     = getIntent().getStringExtra("title");
         phoneno   = getIntent().getStringExtra("phone");
         amount    = getIntent().getStringExtra("amount");
         transdate = getIntent().getStringExtra("trans_date");
         transtime = getIntent().getStringExtra("trans_time");
         refno     = getIntent().getStringExtra("refno");
+
+        AppLogg appLogg = new AppLogg();
+        appLogg.getlog(getApplicationContext(), "TXN-[" + appLogg.timestamp() + "|" + appConn.refNo + "]");
+        appLogg.logit(getApplicationContext(), appLogg.logcontent(getApplicationContext()));
     }
 
     @Override

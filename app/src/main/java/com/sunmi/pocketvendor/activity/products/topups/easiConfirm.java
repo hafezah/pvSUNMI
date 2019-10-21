@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sunmi.pocketvendor.AppConn;
+import com.sunmi.pocketvendor.AppLogg;
 import com.sunmi.pocketvendor.BaseActivity;
 import com.sunmi.pocketvendor.R;
 import com.sunmi.pocketvendor.activity.errorActivity;
@@ -22,6 +23,10 @@ import com.sunmi.pocketvendor.activity.successActivity;
 import com.sunmi.pocketvendor.network.Global;
 import com.sunmi.pocketvendor.network.Response;
 import com.sunmi.pocketvendor.network.ResponseListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class easiConfirm extends BaseActivity {
     private AppConn appConn;
@@ -47,9 +52,8 @@ public class easiConfirm extends BaseActivity {
     }
 
     public void eConfirm(View view){
-
-        Long tsLong = System.currentTimeMillis()/1000;
-        log("cETP(" + tsLong.toString() + ")");
+        AppLogg appLogg = new AppLogg();
+        appLogg.getlog(getApplicationContext(), "EASIC-[" + appLogg.timestamp() + "]");
 
         // Preventing multiple clicks, using threshold of 4 minutes
         new CountDownTimer(10000, 1000) {
@@ -116,7 +120,6 @@ public class easiConfirm extends BaseActivity {
                     if (appConn.res_server.equals("yes")){
                         pdialog.dismiss();
 
-                        System.out.println("E live ref = " + appConn.refNo);
                         startActivity(new Intent(easiConfirm.this, successActivity.class)
                                 .putExtra("title", "EASI Top-Up")
                                 .putExtra("phone", getPhone)

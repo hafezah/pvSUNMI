@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sunmi.pocketvendor.AppConn;
+import com.sunmi.pocketvendor.AppLogg;
 import com.sunmi.pocketvendor.BaseActivity;
 import com.sunmi.pocketvendor.R;
 import com.sunmi.pocketvendor.activity.cardScanActivity;
@@ -43,7 +44,8 @@ public class easiActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easi);
 
-        log("pETP");
+        AppLogg appLogg = new AppLogg();
+        appLogg.getlog(getApplicationContext(), "EASIP");
 
         LoadGUI();
     }

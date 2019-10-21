@@ -1,6 +1,9 @@
 package com.sunmi.pocketvendor;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 
 import com.sunmi.pocketvendor.network.Global;
 
@@ -30,7 +33,15 @@ public class AppLogg {
     private String currentdate = df.format(c);
     private String currenttime = tf.format(c);
 
-    public void logit(String contents){
+    public void getlog(Context context, String str){
+        String logstr;
+        SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(context);
+        logstr = p.getString("applogg", null);
+        p.edit().putString("applogg", logstr + "/" + str).apply();
+
+    }
+
+    public void logit(Context context, String contents){
         File rootPath = Environment.getExternalStorageDirectory();
         folderPath = new File(rootPath.getAbsolutePath() + Global.FOLDER);
         filename =  currentdate + ".txt";
@@ -62,7 +73,9 @@ public class AppLogg {
 
                         StringBuilder sb = new StringBuilder();
                         sb.append(getcontent+ "\n");
-                        sb.append(currenttime + "->" + contents + "\n");
+                        sb.append(currenttime + "-> [A]" + contents + "\n");
+                        SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(context);
+                        p.edit().clear().apply();
 
                         osw.append(sb);
                         osw.close();
@@ -82,7 +95,76 @@ public class AppLogg {
                     OutputStreamWriter osw = new OutputStreamWriter(fos);
 
                     StringBuilder sb = new StringBuilder();
-                    sb.append(currenttime + "->" + contents + "\n");
+                    sb.append(currenttime + "-> [A]" + contents + "\n");
+
+                    osw.append(sb);
+                    osw.close();
+
+                    fos.flush();
+                    fos.close();
+
+                } catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void errlogit(Context context, String contents){
+        File rootPath = Environment.getExternalStorageDirectory();
+        folderPath = new File(rootPath.getAbsolutePath() + Global.FOLDER);
+        filename =  currentdate + ".txt";
+
+        File[] files = folderPath.listFiles();
+        for (int i = 0; i < files.length; i++)
+        {
+            System.out.println("===> filename: " + files[i].getName());
+
+            File textFile = new File(folderPath, filename);
+            if (textFile.exists()){
+                // append log
+                if (currentdate.equals(files[i].getName().replace(".txt", ""))){
+                    try {
+//                    textFile.delete();
+//                    textFile.createNewFile();
+                        String getline;
+                        FileInputStream fis = new FileInputStream(textFile);
+                        InputStreamReader isr = new InputStreamReader(fis);
+                        BufferedReader br = new BufferedReader(isr);
+                        while ( (getline = br.readLine()) != null ) {
+                            getcontent = getline;
+                        }
+                        fis.close();
+                        br.close();
+
+                        FileOutputStream fos = new FileOutputStream(textFile);
+                        OutputStreamWriter osw = new OutputStreamWriter(fos);
+
+                        StringBuilder sb = new StringBuilder();
+                        sb.append(getcontent+ "\n");
+                        sb.append(currenttime + "-> [E]" + contents + "\n");
+                        SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(context);
+                        p.edit().clear().apply();
+
+                        osw.append(sb);
+                        osw.close();
+
+                        fos.flush();
+                        fos.close();
+
+                    } catch (IOException e){
+                        e.printStackTrace();
+                    }
+                }
+            } else {
+                folderPath.mkdir();
+                try {
+                    textFile.createNewFile();
+                    FileOutputStream fos = new FileOutputStream(textFile);
+                    OutputStreamWriter osw = new OutputStreamWriter(fos);
+
+                    StringBuilder sb = new StringBuilder();
+                    sb.append(currenttime + "-> [E]" + contents + "\n");
 
                     osw.append(sb);
                     osw.close();
@@ -124,6 +206,15 @@ public class AppLogg {
         // web call post getcontent to email: pocketvendor@threegmedia.com
 
 
+    }
+
+    public String timestamp(){
+        return currenttime;
+    }
+
+    public String logcontent(Context context){
+        SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(context);
+        return p.getString("applogg", null);
     }
 
 }
